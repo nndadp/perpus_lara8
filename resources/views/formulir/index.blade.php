@@ -89,8 +89,8 @@
                       <td>nis</td>
                       <td>Nama Peminjam</td>
                       <td>Judul Buku</td>
-                      <td>Tanggal Pinjam</td>
                       <td>Petugas</td>
+                      <td>status</td>
                       <td colspan="2">Action</td>
                   </tr>
                   @php
@@ -102,10 +102,10 @@
                       <td> {{ $p->nis }} </td>
                       <td> {{ $p->nama_peminjam }} </td>
                       <td> {{ $p->judul_buku}} </td>
-                      <td> {{ $p->tgl_pinjam}} </td>
                       <td> {{ $p->petugas}} </td>
+                      <td> {{ $p->status}} </td>
                       <td><a href="{{ route('formulir.edit', $p->id) }}" class="btn btn-primary">EDIT</a></td>
-                      <td><a href="{{ route('formulir.show', $p->id) }}" class="btn btn-primary">Show</a></td>  
+                      <td><a href="{{ route('formulir.show', $p->id) }}" class="btn btn-primary">Detail</a></td>  
                   </tr>
                   @endforeach
             </table>

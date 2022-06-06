@@ -108,6 +108,10 @@
             {{ $formulir->tgl_pinjam}}
         </div>
         <div class="form-group">
+            <strong>Tanggal Kembali :</strong>
+            {{ $formulir->tgl_kembali}}
+        </div>
+        <div class="form-group">
             <strong>Petugas :</strong>
             {{ $formulir->petugas}}
         </div>

@@ -63,7 +63,7 @@ class StudentsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Rayo  $rayon
+     * @param  \App\Models\Rayon $rayon
      * @return \Illuminate\Http\Response
      */
     public function show(Students $students)

@@ -112,7 +112,7 @@
                       <td> {{ $s->jk }}
                       <td><a href="{{ route('students.edit', $s->id) }}" class="btn btn-primary">EDIT</a></td> 
                       <td>
-                            <form onsubmit="return confirm('Yakin Hapus {{ $s->nama }}??')" action="{{ route('students.destroy', $s->id) }} " method="POST">
+                            <form onsubmit="return confirm('Yakin Hapus {{ $s->nama }}??')" action="{{ route('students.destroy', $s->id) }}" method="POST">
                             @csrf
                             @method('DELETE')
   

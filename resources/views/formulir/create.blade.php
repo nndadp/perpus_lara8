@@ -156,7 +156,7 @@
                 <input type="date" name="tgl_kembali" class="input">
             </tr>
             <tr>
-                <input type="hidden" name="petugas" class="input" value="{{ auth()->user()->name }}">
+            <input type="text" name="petugas" hidden value="{{ Auth::user()->name }}">
             </tr>
             <tr>
                 <input type="hidden" name="status" value="Belum dikembalikan">
